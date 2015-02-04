@@ -15,3 +15,12 @@ class Movie(Subject):
 
     def imdb(self, imdb_id):
         return self._get('/v2/movie/imdb/%s' % imdb_id)
+
+    #/v2/movie/nowplaying
+    def nowplaying(self):
+        return self._get('/v2/movie/nowplaying')
+
+    #/v2/movie/coming
+
+    def coming(self):
+        reuturn self._get('/v2/movie/coming')
